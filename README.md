@@ -3,6 +3,7 @@
 export UID=${UID}
 export GID=${GID}
 docker-compose run web bundle exec rails new . -f -d mysql -T -B --api
+dokcer-compose build
 ```
 
 ・ファイルの編集
