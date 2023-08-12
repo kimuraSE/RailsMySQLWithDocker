@@ -1,3 +1,4 @@
+# 初期設定
 ・最初に実行するコマンド
 ```
 export UID=${UID}
@@ -23,23 +24,9 @@ development:
   database: develop_db
 ```
 
-・ビルド
-```
-docker-compose build
-```
-
 ・DB作成
 ```
-docker-compose run web rails db:create
-```
-
-・起動
-```
-docker-compose up
-```
-
-操作
-```
-docker exec -it rails-api /bin/bash
-rails dbconsole
+docker-compose up -d
+docker exec -it コンテナ /bin/bash
+rails db:create
 ```
