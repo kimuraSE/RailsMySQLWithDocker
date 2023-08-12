@@ -1,9 +1,10 @@
-・実行
+・最初に実行するコマンド
 ```
 export UID=${UID}
 export GID=${GID}
 docker-compose run web bundle exec rails new . -f -d mysql -T -B --api
 dokcer-compose build
+docker-compose up
 ```
 
 ・ファイルの編集
