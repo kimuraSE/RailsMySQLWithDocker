@@ -2,7 +2,7 @@
 ```
 export UID=${UID}
 export GID=${GID}
-docker-compose run --no-deps web rails new . --force --database=mysql --skip-bundle
+docker-compose run web bundle exec rails new . -f -d mysql -T -B --api
 ```
 
 ・ファイルの編集
