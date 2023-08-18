@@ -4,8 +4,7 @@
 export UID=${UID}
 export GID=${GID}
 docker-compose run web bundle exec rails new . -f -d mysql -T -B --api
-UID_GID="$(id -u):$(id -g)" dokcer-compose build
-docker-compose up
+UID_GID="$(id -u):$(id -g)" docker-compose up --build -d
 ```
 
 ・ファイルの編集
